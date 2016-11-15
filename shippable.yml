@@ -17,4 +17,5 @@ build:
     - apt-get install libpq-dev
     - psql -c 'create database "sample-rubyonrails-postgres-heroku_test";' -U postgres
     - bundle install
+    - bundle exec rake db:create db:migrate
     - bundle exec rake
