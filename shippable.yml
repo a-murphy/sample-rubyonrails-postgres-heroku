@@ -13,6 +13,7 @@ build:
   ci:
     - mkdir -p shippable/testresults
     - mkdir -p shippable/codecoverage
+    - apt-get update
     - apt-get install libpq-dev
     - psql -c 'create database "sample-rubyonrails-postgres-heroku_test";' -U postgres
     - bundle install
