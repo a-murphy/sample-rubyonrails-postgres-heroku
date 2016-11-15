@@ -9,7 +9,7 @@ env:
 services:
   - postgres
  
-bulid:
+build:
   ci:
     - mkdir -p shippable/testresults
     - mkdir -p shippable/codecoverage
