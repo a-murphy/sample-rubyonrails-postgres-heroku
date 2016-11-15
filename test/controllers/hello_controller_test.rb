@@ -10,6 +10,6 @@ class HelloControllerTest < ActionController::TestCase
   end
   test "returns test2" do
     env = ENV.fetch("TEST_TWO");
-    env.should eq("test")
+    assert_equal env, 'test'
   end
 end
