@@ -8,7 +8,7 @@ class HelloControllerTest < ActionController::TestCase
     assert_not_nil assigns(:score)
     assert_select 'p', 'The score is 1234'
   end
-  it "returns test2" do
+  test "returns test2" do
     env = ENV.fetch("TEST_TWO");
     env.should eq("test")
   end
